@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left, #d3d7db, #c7cfd2, #bcc7c6, #b5bfb9, #b1b5ab);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .header {
+            position: fixed; /* Fixed positioning to stay at the top */
+            top: 0; /* Align to the top of the viewport */
+            width: 100%; /* Full width */
+            text-align: center;
+            background-color: #007bff; /* Blue background color */
+            padding: 20px;
+            font-size: 23px;
+        }
+        
+        .header h1, .header h2 {
+            font-family: cursive; /* Cursive font style */
+            color: #fff; /* Text color */
+            margin: 5px 0; /* Adjusted margin */
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            max-width: 800px;
+            margin-top: 80px; /* Adjusted margin to create space below the header */
+        }
+        
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .icon img {
+            width: 120px;
+            height: auto;
+        }
+        
+        .icon p {
+            margin-top: 10px;
+        }
+        
+        .icon:hover {
+            transform: scale(1.1);
+            color: #007bff;
+        }
+        .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1></h1>
+        <h2>Visit these Top-3 Company Websites</h2>
+    </header>
+    <div class="container">
+        <div class="icon" onclick="window.location.href='amazon/index.html'">
+            <img src="/images/amazon.png" alt="amazon">
+            <p>Amazon</p>
+        </div>
+
+        <div class="icon" onclick="window.location.href='apple/index.html'">
+            <img src="/images/apple.png" alt="apple">
+            <p>Apple</p>
+        </div>
+
+        <div class="icon" onclick="window.location.href='JP Morgan/index.html'">
+            <img src="/images/iconojp.png" alt="JP morgan">
+            <p>JP Morgan</p>
+        </div>
+    </div>
+
+    <footer class="footer">Team SHNR &copy; All Rights Reserved</footer>
+</body>
+</html>
